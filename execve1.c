@@ -6,7 +6,7 @@ int main()
 {
     char cmd[]="/bin/ls";
 
-    char *argv[]={"ls",NULL};
+    char *argv[]={"ls","-a", NULL};
     char *envp[]={NULL};
 
     printf("---------The beginning of the original program---------\n");
