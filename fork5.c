@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <sys/wait.h>
 // your global variables and defined functions here.
 
 int main() {
@@ -25,6 +26,7 @@ int main() {
 	exit(0);
 
   } else {
+	  wait(NULL); 
 	  result = a + b;
   	  printf("Result %d + %d = %d\n" , a , b , result) ;
   }
