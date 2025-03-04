@@ -4,10 +4,10 @@
 
 int main()
 {
-    char cmd[]="ls";
+    char cmd[]="/bin/ls";
 
-    char * argv[]={NULL};
-    char * argc[]={NULL};
+    char *argv[]={"ls",NULL};
+    char *envp[]={NULL};
 
     printf("---------The beginning of the original program---------\n");
     if(execve(cmd,argv,argc)<0)
